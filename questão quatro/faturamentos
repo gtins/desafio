@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(){
+	float dados[5] = {67836.43, 36678.66, 29229.88, 27165.48, 19849.53};
+	float total;
+	float percentual[5];
+	int i;
+	for(i=0;i<=5;i++){
+		total += dados[i];
+	}
+	for(i=0;i<=5;i++){
+		percentual[i] = (dados[i] * 100 / total);
+	}
+	printf("O faturamento total foi R$%.2f\n",total);
+	printf("A porcentagem de faturamento de Sao Paulo foi de %.2f\n",percentual[0]);
+	printf("A porcentagem de faturamento de Rio de Janeiro foi de %.2f\n",percentual[1]);
+	printf("A porcentagem de faturamento de Minas Gerais foi de %.2f\n",percentual[2]);
+	printf("A porcentagem de faturamento de Espirito Santo foi de %.2f\n",percentual[3]);
+	printf("A porcentagem de faturamento de outros estados foi de %.2f\n",percentual[4]);
+
+return(0);
+}
