@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(){
+	int n,x1,x2,pot;
+	printf("Digite um numero: ");
+	scanf("%i",&n);
+	pot = pow(n,2) + 0.5;
+	x1 =(5*pot)+4;
+	x2 =(5*pot)-4;
+	if(sqrt(x1) == round(sqrt(x1)) || sqrt(x2) == round(sqrt(x2))){
+	printf("Esse numero pertence a sequencia de Fibonacci");
+	}
+	else{
+		printf("Esse numero nao pertence a sequencia de Fibonacci");
+	}
+return(0);
+}
