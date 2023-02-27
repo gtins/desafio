@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() { 
+	char string1[100]= "desafio", string_reversa[100];
+	int i, j, cont = 0;
+	printf("\n String a ser invertida = %s", string1);
+	while (string1[cont] != '\0') {
+  	cont++;
+}
+	j = cont - 1;
+	for (i = 0; i < cont; i++) {
+  	string_reversa[i] = string1[j];
+  	j--;
+}
+printf("\n String Invertida = %s", string_reversa);
+}
