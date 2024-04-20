@@ -3,6 +3,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Teko", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
     background: radial-gradient(circle, rgba(49, 5, 130, 1) 45%, rgba(14, 2, 42, 1) 100%);
 }
 
@@ -14,10 +17,45 @@ body {
     height: fit-content;
     padding: 30px;
     color: white;
-    background-color: rgb(0, 162, 255);
+    background-color: #ee3514e3;
     border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
 }
 
 .titulo {
     text-align: center;
+}
+
+.button {
+    text-align: center;
+}
+
+#buttonSend{
+    padding: 10px;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    font-family: "Teko", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    border: 3px solid white;
+}
+
+#inputEndereco {
+    background-color: rgba(49, 5, 130, 1);
+    display: block;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.input {
+    font-family: "Teko", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    background-color: rgba(49, 5, 130, 1);
+    width: 96%;
+    display: block;
+    border: 3px solid white;
+    border-radius: 5px; 
+    color: white;
 }
