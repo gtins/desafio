@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cardCenter{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    background-color: red;
+}
