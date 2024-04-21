@@ -1,32 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta de CEP</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href=".\style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <script src="index.js" type="module" defer></script>
+    <title>Consulta CEP</title>
 </head>
 <body>
-    <div class="cardCenter">
-        <div>
-            <div class="title">
-                <h1 class="titulo">Consultar Cep</h1>
+    <main class="container">
+        <h1 class="title">Consulta CEP</h1>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="cep"  required>
+                <label for="cep">CEP</label>
             </div>
-            <div>
-                <input class="input" id="inputEndereco" placeholder="CEP - Cidade">
-                <br>
-                <input class="input" type="text" id="inputCEP" placeholder="Digite o CEP">
-                <br>
+            <div class="inputbox">
+                <input type="text" id="endereco"  required>
+                <label for="endereco">Endereço</label>
             </div>
-            <div class="button">
-                <button id="buttonSend" onclick="pesquisarCep()">Consultar</button>
+            <div class="inputbox">
+                <input type="text" id="numero"  required>
+                <label for="numero">DDD</label>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="bairro"  required>
+                <label for="bairro">Bairro</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="cidade"  required>
+                <label for="cidade">Cidade</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="estado"  required>
+                <label for="estado">Estado</label>
+            </div>
+        </div>
+        <div class="row">
+            <button id="btn">Consultar</button>
+        </div>
+    </main>
+    <footer>
+        Gustavo Henrique Martins
+    </footer>
 </body>
-<script src="main.js"></script>
-
 </html>
